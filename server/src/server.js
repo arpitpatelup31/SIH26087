@@ -3,7 +3,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { initializeDatabase } from './config/db.js';
+import { dbHelper, initializeDatabase } from './config/db.js';
+import { runSeed } from './seed.js';
 
 import authRoutes from './routes/authRoutes.js';
 import courseRoutes from './routes/courseRoutes.js';
@@ -27,6 +28,18 @@ const PORT = process.env.PORT || 5000;
 
 // Initialize SQLite schema
 initializeDatabase();
+
+// Auto-seed if database is empty (useful for Render free tier without shell access)
+try {
+  const userCount = dbHelper.all('SELECT COUNT(*) as count FROM users')[0].count;
+  if (userCount === 0) {
+    console.log('Database is empty. Auto-seeding initial data...');
+    await runSeed();
+    console.log('Auto-seeding complete.');
+  }
+} catch (e) {
+  console.error('Failed to auto-seed database:', e);
+}
 
 // Middleware
 app.use(cors({
