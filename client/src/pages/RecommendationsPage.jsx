@@ -58,7 +58,7 @@ export const RecommendationsPage = ({ onSelectCourse, onNavigate }) => {
         <div className="space-y-2 max-w-2xl">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold text-orange-700 bg-orange-50 px-2.5 py-1 rounded-full border border-orange-100">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>AI Recommendation Engine (SIH26087)</span>
+            <span>AI Recommendation Engine</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
             Personalized Learning Recommendations

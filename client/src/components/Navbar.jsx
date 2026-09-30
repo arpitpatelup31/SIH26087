@@ -50,7 +50,7 @@ export const Navbar = ({ currentTab, onNavigate }) => {
             CoopConnect LMS
           </span>
           <span className="text-emerald-300">|</span>
-          <span className="hidden sm:inline text-emerald-200">National Cooperative Skill Development Initiative (SIH26087)</span>
+          <span className="hidden sm:inline text-emerald-200">National Cooperative Skill Development Initiative</span>
         </div>
 
         <div className="flex items-center space-x-4">

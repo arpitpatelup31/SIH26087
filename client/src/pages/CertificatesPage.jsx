@@ -147,7 +147,7 @@ export const CertificatesPage = ({ onNavigate }) => {
                   </div>
 
                   <div className="text-xs font-black text-orange-600 tracking-wider uppercase">
-                    CoopConnect Skill Development Portal (SIH26087)
+                    CoopConnect Skill Development Portal
                   </div>
 
                   <h2 className="text-2xl sm:text-3xl font-black text-slate-900 uppercase tracking-tight pt-2">

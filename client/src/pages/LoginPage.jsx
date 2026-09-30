@@ -143,7 +143,7 @@ export const LoginPage = ({ onNavigate }) => {
           </div>
 
           <div className="relative z-10 pt-6 border-t border-emerald-800 text-[11px] text-emerald-300/80 flex items-center justify-between">
-            <span>Problem Statement: SIH26087</span>
+            <span>Problem Statement</span>
             <span>Ministry of Cooperation</span>
           </div>
 

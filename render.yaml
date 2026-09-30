@@ -12,3 +12,9 @@ services:
         generateValue: true
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: 10000
+    disk:
+      name: coopconnect-data
+      mountPath: /opt/render/project/src/server/data
+      sizeGB: 1

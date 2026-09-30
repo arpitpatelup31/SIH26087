@@ -14,7 +14,7 @@ export const Footer = () => {
               </div>
               <span className="text-base font-bold text-white tracking-tight">CoopConnect LMS</span>
               <span className="bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded text-[10px] font-bold">
-                SIH26087
+                LMS
               </span>
             </div>
             <p className="text-slate-400 text-xs leading-relaxed max-w-md">
@@ -56,7 +56,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-slate-800 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between text-slate-400 text-[11px]">
-          <p>© 2026 CoopConnect — Smart India Hackathon 2026 Solution for PS SIH26087.</p>
+          <p>© 2026 CoopConnect — Smart India Hackathon 2026 Solution.</p>
           <p className="mt-2 sm:mt-0 text-slate-400">Built for Ministry of Cooperation & NCCT Training Mandates</p>
         </div>
       </div>

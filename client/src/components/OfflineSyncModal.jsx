@@ -43,7 +43,7 @@ export const OfflineSyncModal = () => {
               <h3 className="font-bold text-base flex items-center gap-2">
                 Offline-First Edge & Cloud Sync Architecture
                 <span className="text-[10px] bg-emerald-500 text-slate-950 px-2 py-0.5 rounded font-black uppercase">
-                  SIH26087
+                  LMS
                 </span>
               </h3>
               <p className="text-xs text-slate-400">
