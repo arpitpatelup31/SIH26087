@@ -1,0 +1,20 @@
+{
+  "name": "coopconnect-lms",
+  "version": "1.0.0",
+  "description": "CoopConnect AI-Powered Learning Management System (LMS) - Smart India Hackathon 2026",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && npm run seed",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm install && npm run build && cd ../server && npm install",
+    "start": "cd server && npm run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
